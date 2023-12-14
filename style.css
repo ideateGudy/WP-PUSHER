@@ -1,0 +1,358 @@
+*,
+::before,
+::after {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #F5F8FA;
+  font-family: 'Lato', sans-serif;
+  font-size: 16px;
+  /* line-height: 1.5; */
+  color: #1d2c3c;
+  margin: 0;
+  padding: 0;
+}
+
+/* -------------------------SPACERS--------------------------- */
+
+.line {
+  border-bottom: 2px solid #1693b924;
+  margin: 1rem -1rem 1rem -1rem;
+  /* padding: 1rem 0; */
+}
+
+.container-spacer {
+  padding: 28px 40px;
+  width: 100%;
+}
+
+/* -------------------------SPACERS END--------------------------- */
+
+/*------------ Custom class to create the circle and numbering starts here---------------  */
+
+.basic-information-container .basic-info {
+  display: flex;
+  align-items: center;
+  /* height: 3rem; */
+  width: 100%;
+  /* margin: 0rem 6.3rem 1.3rem 0rem; */
+
+
+  .numbering {
+    position: relative;
+    width: 3rem;
+    height: 100%;
+    background-color: #1179BF;
+    /* color: #fff; */
+
+    .number {
+      position: absolute;
+      color: #1179BF;
+      top: -23px;
+      left: 10px;
+    }
+
+    .circle {
+      position: absolute;
+      width: 30px;
+      height: 30px;
+      border: 2px solid #1179BF;
+      border-radius: 50%;
+      left: 0;
+      top: -14px;
+    }
+  }
+}
+
+/*------------ Custom class to create the circle and numbering Ends Here---------------  */
+
+
+
+
+/* -------------------------NAVIGATION MENU--------------------------- */
+.navigation-menu {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  .left-nav>a>img {
+    width: 150px;
+  }
+
+  .right-nav {
+    /* width: 476px; */
+    /* height: 40px; */
+    /* top: 28px; */
+    /* left: 924px; */
+
+    >a {
+      text-decoration: none;
+      color: #1D2C3C;
+      padding: 0 5px;
+      font-family: Lato;
+      font-size: 14px;
+      font-weight: 700;
+      line-height: 17px;
+      /* text-align: left; */
+    }
+
+    :last-child {
+      border: 2px solid #646E7A;
+      padding: 5px;
+      border-radius: 2px;
+    }
+  }
+
+
+
+
+}
+
+/* -------------------------NAVIGATION MENU ENDS HERE--------------------------- */
+
+
+
+/* -------------------------MAIN SECTION--------------------------- */
+
+.main-section {
+  width: 892px;
+  /* height: 795px; */
+  margin: 0 auto;
+  /* top: 186px; */
+  /* left: 262px; */
+
+  .form-container {
+    display: flex;
+    width: 70%;
+    margin: 0 auto;
+    /* border: 2px solid black; */
+    box-shadow: 0px 1px 10px 2px rgba(43, 64, 78, 0.1);
+  }
+
+  /* ---------------- Left Section of form ------------------------ */
+
+  .checkout-content {
+    width: 60%;
+    background-color: #FFFFFF;
+    padding: 1rem;
+
+    >h2 {
+      font-weight: 400;
+      text-shadow: 0 3px #3333331f;
+    }
+
+
+
+    .name-email {
+      display: flex;
+      width: 100%;
+      margin-bottom: 15px;
+
+      .input-item:last-child {
+        margin-left: 2rem;
+      }
+
+
+    }
+
+    .input-item {
+      display: flex;
+      flex-direction: column;
+      width: 100%;
+
+      >input {
+        padding: 6px;
+        border: none;
+        background-color: #EDEFF2;
+        border-radius: 5px;
+        font-size: 14px;
+        width: 100%;
+      }
+
+      >label {
+        font-size: 14px;
+        font-weight: 400;
+        margin-bottom: 5px;
+      }
+
+      >input[type="email"] {
+        width: 100%;
+      }
+    }
+
+
+    /* Payment information section */
+    .input-group-container {
+      width: 100%;
+      margin-top: 5px;
+
+      >input[type="text"] {
+        border: none;
+        margin-right: -5px;
+        background-color: #EDEFF2;
+        padding: 6px;
+        outline: none;
+      }
+
+      >input:nth-child(1) {
+        border-top-left-radius: 5px;
+        border-bottom-left-radius: 5px;
+        width: 60%;
+      }
+
+      >input:nth-child(2) {
+        width: 20%;
+      }
+
+      >input:nth-child(3) {
+        width: 20%;
+        border-top-right-radius: 5px;
+        border-bottom-right-radius: 5px;
+      }
+    }
+
+    /* Call to action button */
+    .basic-information-container button[type="submit"] {
+      border: none;
+      border-radius: 3px;
+      color: #fff;
+      padding: 7px 5px;
+      width: 100%;
+      background-color: #038E7D;
+      transition: 1s ease-in-out background-color;
+
+      &:hover {
+        transition: 1s ease-in-out background-color;
+        background-color: #0a665d;
+      }
+    }
+
+    .help {
+
+      display: flex;
+      align-items: center;
+
+      >img {
+        width: 15px;
+        margin-bottom: 1rem;
+      }
+
+      >p {
+        font-size: 14px;
+        margin-left: 5px;
+      }
+    }
+
+
+  }
+
+
+  /* ---------------- Right Section of form ------------------------ */
+
+  .Freelancer-section {
+    width: 40%;
+    background-color: #1179BF;
+    color: #fff;
+    padding: 1rem;
+    font-weight: 300;
+
+    >a {
+      color: #fff;
+      text-decoration: none;
+      border-bottom: 2px solid #9ee1f5cb;
+      font-size: 15px;
+    }
+
+    .line {
+      border-bottom: 2px solid #9ee1f544
+    }
+
+    .profile {
+      display: flex;
+      align-items: center;
+
+      >img {
+        border-radius: 50%;
+        width: 40px;
+        margin-right: 5px;
+      }
+    }
+
+    /* ---------------Pricing-------------- */
+    .pricing {
+      /* margin: 0rem 1.8rem 0.3rem 0rem; */
+      /* width: calc(100% - 1.8rem); */
+      /* overflow: hidden; */
+      /* position: relative; */
+      display: flex;
+      align-items: center;
+
+      .symbol {
+        font-size: 1.7rem;
+        margin: 0 5px 10px 0;
+      }
+
+      .year {
+        display: flex;
+        line-height: 1.17;
+        align-items: baseline;
+        padding: 0;
+
+        .year-number {
+          font-size: 3rem;
+          /* font-weight: 300; */
+        }
+
+        .year-letter {
+          font-size: 1rem;
+        }
+      }
+
+    }
+
+    /* ---------------List items-------------- */
+    .list-item-container .list-item {
+      display: flex;
+      align-items: center;
+      font-size: 14px;
+      margin: 5px 0;
+
+      >span {
+        margin-left: 10px;
+      }
+    }
+
+  }
+
+
+}
+
+/* -------------------------MAIN SECTION ENDS HERE--------------------------- */
+
+/* Media queries for mobile*/
+
+@media (max-width: 800px) {
+  .container-spacer {
+    padding: 0;
+  }
+
+  .main-section {
+    width: 100%;
+
+    .form-container {
+      flex-direction: column;
+
+    }
+
+    .checkout-content {
+      width: 100%;
+    }
+
+    .Freelancer-section {
+      width: 100%;
+    }
+  }
+
+
+}
