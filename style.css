@@ -113,11 +113,11 @@ body {
 
 
 
-/* -------------------------MAIN SECTION--------------------------- */
+/* -------------------------MAIN SECTION --------------------------- */
 
 .main-section {
   width: 892px;
-  /* height: 795px; */
+  height: 795px;
   margin: 0 auto;
   /* top: 186px; */
   /* left: 262px; */
@@ -133,7 +133,7 @@ body {
   /* ---------------- Left Section of form ------------------------ */
 
   .checkout-content {
-    width: 60%;
+    width: 65%;
     background-color: #FFFFFF;
     padding: 1rem;
 
@@ -213,18 +213,26 @@ body {
     }
 
     /* Call to action button */
-    .basic-information-container button[type="submit"] {
-      border: none;
-      border-radius: 3px;
-      color: #fff;
-      padding: 7px 5px;
-      width: 100%;
-      background-color: #038E7D;
-      transition: 1s ease-in-out background-color;
+    .basic-information-container {
 
-      &:hover {
+      >img {
+        display: block;
+        margin: 0 auto;
+      }
+
+      >button[type="submit"] {
+        border: none;
+        border-radius: 3px;
+        color: #fff;
+        padding: 7px 5px;
+        width: 100%;
+        background-color: #038E7D;
         transition: 1s ease-in-out background-color;
-        background-color: #0a665d;
+
+        &:hover {
+          transition: 1s ease-in-out background-color;
+          background-color: #0a665d;
+        }
       }
     }
 
@@ -236,11 +244,13 @@ body {
       >img {
         width: 15px;
         margin-bottom: 1rem;
+        margin-left: 2.5rem;
       }
 
       >p {
         font-size: 14px;
-        margin-left: 5px;
+        width: 80%;
+        margin: 1rem auto;
       }
     }
 
@@ -251,7 +261,7 @@ body {
   /* ---------------- Right Section of form ------------------------ */
 
   .Freelancer-section {
-    width: 40%;
+    width: 35%;
     background-color: #1179BF;
     color: #fff;
     padding: 1rem;
