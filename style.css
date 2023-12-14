@@ -257,6 +257,10 @@ body {
     padding: 1rem;
     font-weight: 300;
 
+    >p {
+      font-style: italic;
+    }
+
     >a {
       color: #fff;
       text-decoration: none;
