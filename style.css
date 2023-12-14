@@ -333,6 +333,11 @@ body {
 /* Media queries for mobile*/
 
 @media (max-width: 800px) {
+  body {
+    margin: 0;
+    padding: 0;
+  }
+
   .container-spacer {
     padding: 0;
   }
@@ -342,6 +347,7 @@ body {
 
     .form-container {
       flex-direction: column;
+      width: 100%;
 
     }
 
@@ -353,6 +359,7 @@ body {
       width: 100%;
     }
   }
+
 
 
 }
