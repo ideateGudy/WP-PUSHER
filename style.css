@@ -365,6 +365,13 @@ footer p {
   margin-top: -3px;
   font-size: 14px;
 
+  >span {
+    display: inline-block;
+    font-size: 20px;
+    vertical-align: middle;
+    margin-top: -13px;
+  }
+
   >a {
     color: #1179BF;
     text-decoration: none;
@@ -380,10 +387,14 @@ footer p {
 
 /* Media queries for mobile*/
 
-@media (max-width: 800px) {
+@media (max-width: 500px) {
   body {
     margin: 0;
     padding: 0;
+  }
+
+  nav {
+    overflow: hidden;
   }
 
   .container-spacer {
@@ -392,6 +403,7 @@ footer p {
 
   .main-section {
     width: 100%;
+    margin-bottom: 1rem;
 
     .form-container {
       flex-direction: column;
