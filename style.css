@@ -117,7 +117,7 @@ body {
 
 .main-section {
   width: 892px;
-  height: 795px;
+  /* height: 795px; */
   margin: 0 auto;
   /* top: 186px; */
   /* left: 262px; */
@@ -127,7 +127,7 @@ body {
     width: 70%;
     margin: 0 auto;
     /* border: 2px solid black; */
-    box-shadow: 0px 1px 10px 2px rgba(43, 64, 78, 0.1);
+    box-shadow: -3px 3px 10px 5px rgba(43, 64, 78, 0.1);
   }
 
   /* ---------------- Left Section of form ------------------------ */
@@ -161,6 +161,7 @@ body {
       flex-direction: column;
       width: 100%;
 
+
       >input {
         padding: 6px;
         border: none;
@@ -168,6 +169,11 @@ body {
         border-radius: 5px;
         font-size: 14px;
         width: 100%;
+        outline: none;
+
+        &:active {
+          outline: 2px solid #1179BF;
+        }
       }
 
       >label {
@@ -179,6 +185,8 @@ body {
       >input[type="email"] {
         width: 100%;
       }
+
+
     }
 
 
@@ -189,7 +197,7 @@ body {
 
       >input[type="text"] {
         border: none;
-        margin-right: -5px;
+        /* margin-right: -5px; */
         background-color: #EDEFF2;
         padding: 6px;
         outline: none;
@@ -199,16 +207,24 @@ body {
         border-top-left-radius: 5px;
         border-bottom-left-radius: 5px;
         width: 60%;
+        margin-right: -4.1px;
       }
 
       >input:nth-child(2) {
         width: 20%;
+        margin-right: -4px;
       }
 
       >input:nth-child(3) {
+        margin-right: -5px;
+        /* margin-left: 3.4px; */
         width: 20%;
         border-top-right-radius: 5px;
         border-bottom-right-radius: 5px;
+      }
+
+      &:active {
+        outline: 2px solid #1179BF;
       }
     }
 
@@ -341,6 +357,24 @@ body {
 
 
 }
+
+
+/* ----------Footer starts------------ */
+footer p {
+  text-align: center;
+  margin-top: -3px;
+  font-size: 14px;
+
+  >a {
+    color: #1179BF;
+    text-decoration: none;
+  }
+
+
+}
+
+/* ----------Footer ends------------ */
+
 
 /* -------------------------MAIN SECTION ENDS HERE--------------------------- */
 
