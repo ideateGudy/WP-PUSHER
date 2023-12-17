@@ -4,6 +4,11 @@
   box-sizing: border-box;
 }
 
+
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   background-color: #F5F8FA;
   font-family: 'Lato', sans-serif;
@@ -13,6 +18,27 @@ body {
   margin: 0;
   padding: 0;
 }
+
+/* --------skip navigation starts----------- */
+
+.skip-nav-link {
+  position: absolute;
+  background-color: #038E7D;
+  text-decoration: none;
+  padding: 5px 10px;
+  transform: translateY(-120%);
+  color: #fff;
+  border-radius: 0 0 5px 5px;
+  transition: transform 325ms ease-in;
+  font-size: 14px;
+}
+
+.skip-nav-link:focus {
+  transform: translateY(0);
+  outline: solid green;
+}
+
+/*------------- skip navigation ends --------------*/
 
 /* -------------------------SPACERS--------------------------- */
 
