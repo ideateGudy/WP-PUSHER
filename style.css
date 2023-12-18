@@ -108,11 +108,11 @@ body {
     align-items: center;
 
     >a>img {
-      width: 80px;
+      width: 100px;
     }
 
     >h4 {
-      font-size: 18px;
+      font-size: 25px;
       margin-left: -15px;
       font-weight: 900;
     }
