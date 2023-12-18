@@ -428,6 +428,29 @@ footer p {
 
   nav {
     overflow: hidden;
+
+    .navigation-menu {
+
+      flex-direction: column;
+
+      .left-nav {
+        align-self: flex-start;
+
+        >a>img {
+          width: 80px;
+        }
+
+        >h4 {
+          font-size: 18px;
+        }
+      }
+
+      .right-nav {
+        align-self: flex-start;
+        margin-left: .7rem;
+      }
+
+    }
   }
 
   .container-spacer {
