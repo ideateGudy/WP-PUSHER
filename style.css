@@ -102,8 +102,20 @@ body {
   justify-content: space-between;
   align-items: center;
 
-  .left-nav>a>img {
-    width: 150px;
+  .left-nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    >a>img {
+      width: 80px;
+    }
+
+    >h4 {
+      font-size: 18px;
+      margin-left: -15px;
+      font-weight: 900;
+    }
   }
 
   .right-nav {
