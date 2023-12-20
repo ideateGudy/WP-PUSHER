@@ -55,45 +55,6 @@ body {
 
 /* -------------------------SPACERS END--------------------------- */
 
-/*------------ Custom class to create the circle and numbering starts here---------------  */
-
-.basic-information-container .basic-info {
-  display: flex;
-  align-items: center;
-  /* height: 3rem; */
-  width: 100%;
-  /* margin: 0rem 6.3rem 1.3rem 0rem; */
-
-
-  .numbering {
-    position: relative;
-    width: 3rem;
-    height: 100%;
-    background-color: #1179BF;
-    /* color: #fff; */
-
-    .number {
-      position: absolute;
-      color: #1179BF;
-      top: -23px;
-      left: 10px;
-    }
-
-    .circle {
-      position: absolute;
-      width: 30px;
-      height: 30px;
-      border: 2px solid #1179BF;
-      border-radius: 50%;
-      left: 0;
-      top: -14px;
-    }
-  }
-}
-
-/*------------ Custom class to create the circle and numbering Ends Here---------------  */
-
-
 
 
 /* -------------------------NAVIGATION MENU--------------------------- */
@@ -115,6 +76,7 @@ body {
       font-size: 25px;
       margin-left: -15px;
       font-weight: 900;
+      color: #052744;
     }
   }
 
@@ -263,6 +225,29 @@ body {
 
     /* Call to action button */
     .basic-information-container {
+
+      .basic-info {
+        display: flex;
+        align-items: center;
+        width: 100%;
+
+
+        .numbering {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          width: 25px;
+          height: 25px;
+          border: 1.5px solid #1179BF;
+          color: #1179BF;
+          border-radius: 50%;
+          font-weight: 400;
+          margin-right: 5px;
+          font-size: 14px;
+        }
+
+
+      }
 
       >img {
         display: block;
